@@ -11,19 +11,19 @@ text[type=register_form],[type=update_form]{
   margin-left: 40px;
   font-size: 40px;
   color: white;
-  background-color: #cf0e0e;
+  background-color: #000000;
 }
 text[type=update_form]{
   margin-left: 60px;
   font-size: 40px;
   color: white;
-  background-color: #cf0e0e;
+  background-color: #000000;
 }
 text[type=login_form]{
   margin-left: 75px;
   font-size: 40px;
   color: white;
-  background-color: #cf0e0e;
+  background-color: #000000;
 }
 input[type=text],input[type=password],input[type=date],input[type=time],input[type=number]{
   border-radius: 10px;

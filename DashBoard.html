@@ -15,89 +15,66 @@
     </div>
     <nav>
         <ul>
+            <li><a type='click' id='logoutb' href="./DashBoard.html">Home</a></li>
+            <li><a type='click' id='logoutb' href="./Fav.html">Favourites</a></li>
             <li><a type='click' id='logoutb'>LogOut</a></li>
         </ul>
     </nav>
 </header>
 
 <body>
-    <div id="page-content-wrapper">
-        <div class="cl">
-            <table class="table" id="table">
-                <thead>
-                    <tr>
-                        <th scope="col">id</th>
-                        <th scope="col">noteTitle</th>
-                        <th scope="col">noteBody</th>
-                       
-                    </tr>
-                </thead>
-                <tbody id="tbodyone">
-
-
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <body class="full">
-        <div class="container">
-            <div>
-                <text type="event_form">Add Events</text>
-            </div><br>
-            <label name="label">Event Name:</label>
-            <div>
-                <input id="eventname" placeholder="Add Event" class="input">
-            </div>
-            <label name="label">Event Address:</label>
-            <div>
-                <input id="eventaddress" placeholder="Add Address" class="input"><br />
-            </div>
-            <label name="label">Event Start Time:</label>
-            <div>
-                <input type="time" id="eventstarttime" class="input"><br />
-            </div>
-            <label name="label">Event End Time:</label>
-            <div>
-                <input type="time" id="eventendtime" class="input"><br />
-            </div>
-            <label name="label">Event Date:</label>
-            <div>
-                <input type="date" id="eventdate" placeholder="Add Address" class="input"><br />
-            </div>
-            <div>
-                <button type="events" id="event">Add</button>
-            </div>
-        </div>
-    </body>
     <div>
-        <button type='loadev' id='loadev'>View Events</button>
-    </div>
-</body>  
+        <input type="text" id="title" placeholder="Enter a title" name="title" required>
+    </div><br>
+    <div>
+        <input type="text" id="content" placeholder="Enter your note" name="title" required size="50">
+    </div><br>
+    <div>
+        <button type="login" id="buttonInsert">Insert Note</button>
+
+        <div id="page-content-wrapper">
+            <div class="cl">
+                <table class="table" id="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">noteTitle</th>
+                            <th scope="col">noteBody</th>
+                         </tr>
+                    </thead>
+                    <tbody id="tbodyone">
+
+
+                    </tbody>
+                </table>
+            </div class="cl">
+        </div>
+
+</body>
 <footer class="footer-distributed">
     <div class="footer-left">
-        <h3>Get Blood<span></span></h3>
+        <h3>keepnotes<span></span></h3>
         <p class="footer-links">
         </p>
 
-        <p class="footer-company-name">Blood bank &copy; 2019</p>
+        <p class="footer-company-name">KeppNotes &copy; 2020</p>
     </div>
 
     <div class="footer-center">
 
         <div>
             <i class="fa fa-map-marker"></i>
-            <p><span>10 Dhulabari Street</span> Jhapa, Nepal</p>
+            <p><span>Dillibazar</span> Kathmandu,Nepal</p>
         </div>
 
         <div>
             <i class="fa fa-phone"></i>
-            <p>+9779844687013</p>
+            <p>9868768604</p>
         </div>
 
         <div>
             <i class="fa fa-envelope"></i>
-            <p><a href="#">support@bloodbank.com</a></p>
+            <p><a href="#">keepnotes@gmail.com</a></p>
         </div>
 
     </div>
@@ -105,17 +82,10 @@
     <div class="footer-right">
         <p class="footer-company-about">
             <span>About the company</span>
-            Blood searching service
+            Keep Your Notes
     </div>
 
 </footer>
 <script src="./js/note.js"></script>
-<script src="js/addevent.js"></script>
+
 </html>
-<script>
-$(document).ready(function () {
-        $("#loadev").click(function () {
-            window.location.href='viewevents.html'
-        });
-    });
-</script>

@@ -29,7 +29,7 @@ $(document).ready(function () {
                         alert("Successfull")
                         window.location.href = "DashBoard.html"
                     } else {
-                        alert("Fuck you")
+                        alert("Error")
                     }
                     console.log('Request succeeded with JSON response', data);
                 })
